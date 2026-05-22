@@ -1,0 +1,8 @@
+{
+  "name": "Lo del Alfonso - Carnicería",
+  "description": "Sitio web oficial de la carnicería Lo del Alfonso. Ofrecemos las mejores carnes, chorizos y pollos rostizados con pedidos por WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
