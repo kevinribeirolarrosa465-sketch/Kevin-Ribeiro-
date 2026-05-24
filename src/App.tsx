@@ -25,7 +25,7 @@ const PRODUCTS: Product[] = [
     price: 425,
     unit: "kg",
     description: "Excelente asado de campo, tierno y sabroso.",
-    image: "/src/assets/images/asado_de_campo_1779469781339.png"
+    image: "/assets/images/asado_de_campo_1779469781339.png"
   },
   {
     id: "asado-filo",
@@ -41,7 +41,7 @@ const PRODUCTS: Product[] = [
     price: 495,
     unit: "kg",
     description: "Corte magro y tierno, ideal para milanesas o al horno.",
-    image: "/src/assets/images/nalga_beef_1779468445112.png"
+    image: "/assets/images/nalga_beef_1779468445112.png"
   },
   {
     id: "cuadril",
@@ -49,7 +49,7 @@ const PRODUCTS: Product[] = [
     price: 525,
     unit: "kg",
     description: "Carne de primera, tierna y jugosa para cualquier ocasión.",
-    image: "/src/assets/images/cuadril_beef_cut_1779638856716.png"
+    image: "/assets/images/cuadril_beef_cut_1779638856716.png"
   },
   {
     id: "lomo",
@@ -57,7 +57,7 @@ const PRODUCTS: Product[] = [
     price: 630,
     unit: "kg",
     description: "El corte más tierno y exclusivo de la vaca.",
-    image: "/src/assets/images/lomo_beef_cut_1779639108726.png"
+    image: "/assets/images/lomo_beef_cut_1779639108726.png"
   },
   {
     id: "colita",
@@ -65,7 +65,7 @@ const PRODUCTS: Product[] = [
     price: 544,
     unit: "kg",
     description: "Un clásico para el horno o la parrilla, sin desperdicio.",
-    image: "/src/assets/images/colita_de_cuadril_1779639358246.png"
+    image: "/assets/images/colita_de_cuadril_1779639358246.png"
   },
   {
     id: "falda-parrillera",
@@ -73,7 +73,7 @@ const PRODUCTS: Product[] = [
     price: 304,
     unit: "kg",
     description: "Sabor intenso, el complemento ideal de tu parrillada.",
-    image: "/src/assets/images/falda_parrillera_1779639965133.png"
+    image: "/assets/images/falda_parrillera_1779639965133.png"
   },
   {
     id: "falda",
@@ -81,7 +81,7 @@ const PRODUCTS: Product[] = [
     price: 275,
     unit: "kg",
     description: "Corte tradicional para guisos o caldos con mucho sabor.",
-    image: "/src/assets/images/falda_grilled_ribs_1779640998653.png"
+    image: "/assets/images/falda_grilled_ribs_1779640998653.png"
   },
   {
     id: "aguja",
@@ -89,7 +89,7 @@ const PRODUCTS: Product[] = [
     price: 304,
     unit: "kg",
     description: "Carne veteada y jugosa, ideal para la parrilla o estofado.",
-    image: "/src/assets/images/aguja_beef_cut_1779640183288.png"
+    image: "/assets/images/aguja_beef_cut_1779640183288.png"
   },
   {
     id: "chuleta-vaca",
@@ -97,7 +97,7 @@ const PRODUCTS: Product[] = [
     price: 444,
     unit: "kg",
     description: "Costilla ancha con carne tierna, directo al fuego.",
-    image: "/src/assets/images/chuleta_de_vaca_1779640370452.png"
+    image: "/assets/images/chuleta_de_vaca_1779640370452.png"
   },
   {
     id: "matambre",
@@ -105,7 +105,7 @@ const PRODUCTS: Product[] = [
     price: 544,
     unit: "kg",
     description: "Ideal para matambre relleno o a la pizza en la parrilla.",
-    image: "/src/assets/images/matambre_beef_cut_1779640454322.png"
+    image: "/assets/images/matambre_beef_cut_1779640454322.png"
   },
   {
     id: "paleta",
@@ -113,7 +113,7 @@ const PRODUCTS: Product[] = [
     price: 334,
     unit: "kg",
     description: "Corte versátil y tierno, ideal para múltiples preparaciones.",
-    image: "/src/assets/images/centro_de_paleta_1779640760091.png"
+    image: "/assets/images/centro_de_paleta_1779640760091.png"
   },
   {
     id: "mondongo",
@@ -121,7 +121,7 @@ const PRODUCTS: Product[] = [
     price: 305,
     unit: "kg",
     description: "Mondongo de primera calidad, limpio y tierno.",
-    image: "/src/assets/images/mondongo_beef_tripe_1779641623574.png"
+    image: "/assets/images/mondongo_beef_tripe_1779641623574.png"
   },
   {
     id: "higado",
@@ -129,7 +129,7 @@ const PRODUCTS: Product[] = [
     price: 305,
     unit: "kg",
     description: "Fresco y de calidad, ideal para bifes encebollados.",
-    image: "/src/assets/images/higado_beef_liver_1779641725281.png"
+    image: "/assets/images/higado_beef_liver_1779641725281.png"
   },
   {
     id: "lengua",
@@ -137,7 +137,7 @@ const PRODUCTS: Product[] = [
     price: 290,
     unit: "kg",
     description: "Ideal para preparaciones a la vinagreta o estofados.",
-    image: "/src/assets/images/lengua_beef_tongue_1779641874392.png"
+    image: "/assets/images/lengua_beef_tongue_1779641874392.png"
   },
   {
     id: "milanesa-carne",
@@ -145,7 +145,7 @@ const PRODUCTS: Product[] = [
     price: 430,
     unit: "kg",
     description: "Preparadas con la mejor carne, listas para freír u hornear.",
-    image: "/src/assets/images/milanesa_de_carne_1779641958141.png"
+    image: "/assets/images/milanesa_de_carne_1779641958141.png"
   },
   {
     id: "milanesa-pollo",
@@ -153,7 +153,7 @@ const PRODUCTS: Product[] = [
     price: 304,
     unit: "kg",
     description: "Pechugas seleccionadas y empanadas, sabor y practicidad.",
-    image: "/src/assets/images/milanesa_de_pollo_1779642112016.png"
+    image: "/assets/images/milanesa_de_pollo_1779642112016.png"
   },
   {
     id: "muslos",
@@ -161,7 +161,7 @@ const PRODUCTS: Product[] = [
     price: 190,
     unit: "kg",
     description: "Muslos de pollo frescos, la parte más jugosa.",
-    image: "/src/assets/images/muslos_chicken_quarters_1779642338205.png"
+    image: "/assets/images/muslos_chicken_quarters_1779642338205.png"
   },
   {
     id: "borrego",
@@ -169,7 +169,7 @@ const PRODUCTS: Product[] = [
     price: 315,
     unit: "kg",
     description: "Carne de borrego seleccionada, sabor intenso y tierno.",
-    image: "/src/assets/images/borrego_lamb_chops_1779642438755.png"
+    image: "/assets/images/borrego_lamb_chops_1779642438755.png"
   },
   {
     id: "cordero",
@@ -177,7 +177,7 @@ const PRODUCTS: Product[] = [
     price: 345,
     unit: "kg",
     description: "Cordero tierno de primera calidad para tu parrilla.",
-    image: "/src/assets/images/cordero_raw_lamb_1779642560984.png"
+    image: "/assets/images/cordero_raw_lamb_1779642560984.png"
   },
   {
     id: "lechon",
@@ -185,7 +185,7 @@ const PRODUCTS: Product[] = [
     price: 360,
     unit: "kg",
     description: "Carne de cerdo tierna y jugosa para ocasiones especiales.",
-    image: "/src/assets/images/lechon_raw_pig_1779642627580.png"
+    image: "/assets/images/lechon_raw_pig_1779642627580.png"
   },
   {
     id: "chorizo-comun",
@@ -193,7 +193,7 @@ const PRODUCTS: Product[] = [
     price: 315,
     unit: "kg",
     description: "El infaltable de la parrilla, receta tradicional.",
-    image: "/src/assets/images/chorizo_comun_1779642701318.png"
+    image: "/assets/images/chorizo_comun_1779642701318.png"
   },
   {
     id: "chorizo-queso",
@@ -201,7 +201,7 @@ const PRODUCTS: Product[] = [
     price: 335,
     unit: "kg",
     description: "Chorizo artesanal con un corazón de queso fundido.",
-    image: "/src/assets/images/chorizo_queso_1779642822388.png"
+    image: "/assets/images/chorizo_queso_1779642822388.png"
   },
   {
     id: "calabreza",
@@ -209,7 +209,7 @@ const PRODUCTS: Product[] = [
     price: 390,
     unit: "kg",
     description: "Embutido seco con el toque justo de picante.",
-    image: "/src/assets/images/calabreza_skewered_sausage_1779642919065.png"
+    image: "/assets/images/calabreza_skewered_sausage_1779642919065.png"
   },
   {
     id: "chincho",
@@ -217,7 +217,7 @@ const PRODUCTS: Product[] = [
     price: 390,
     unit: "kg",
     description: "Chinchulines frescos y limpios para una parrilla perfecta.",
-    image: "/src/assets/images/chincho_chinchulines_1779643199876.png"
+    image: "/assets/images/chincho_chinchulines_1779643199876.png"
   },
   {
     id: "pollo-rostizado",
@@ -225,7 +225,7 @@ const PRODUCTS: Product[] = [
     price: 550,
     unit: "unidad",
     description: "El clásico de la casa, rostizado a la leña.",
-    image: "/src/assets/images/pollo_rostizado_whole_chicken_1779643118592.png"
+    image: "/assets/images/pollo_rostizado_whole_chicken_1779643118592.png"
   }
 ];
 
