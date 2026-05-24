@@ -332,12 +332,12 @@ export default function App() {
                 ease: "easeInOut"
               }
             }}
-            className="text-2xl md:text-3xl font-black tracking-tighter"
+            className="text-2xl md:text-3xl font-black tracking-tighter shrink-0"
           >
             <span className="bg-gradient-to-r from-[#B8860B] via-[#FFD700] to-[#B8860B] border-b-2 border-[#FFD700]/30 bg-[length:200%_auto] bg-clip-text text-transparent animate-shine shadow-2xl">ALFONSO</span>
           </motion.h1>
           
-          <div className="flex gap-2 sm:gap-4 md:gap-8 items-center">
+          <div className="flex gap-3 sm:gap-4 md:gap-8 items-center overflow-x-auto whitespace-nowrap scrollbar-none min-w-0 ml-auto pl-4 select-none flex-nowrap">
             {["menu", "ubicacion", "contacto"].map((item) => (
               <motion.a
                 key={item}
@@ -358,7 +358,7 @@ export default function App() {
                   ease: "easeInOut",
                   times: [0, 0.25, 0.5, 0.6, 1]
                 }}
-                className="transition-colors text-sm sm:text-base md:text-lg font-black uppercase tracking-[0.25em] hover:text-[#FFD700] cursor-pointer py-2 px-1 flex items-center justify-center"
+                className="transition-colors text-sm sm:text-base md:text-lg font-black uppercase tracking-[0.25em] hover:text-[#FFD700] cursor-pointer py-2 px-1 flex items-center justify-center shrink-0"
               >
                 <span className="bg-gradient-to-r from-[#B8860B] via-[#FFD700] to-[#B8860B] bg-[length:200%_auto] bg-clip-text text-transparent animate-shine">
                   {item === "menu" ? "Menú" : item.charAt(0).toUpperCase() + item.slice(1)}
