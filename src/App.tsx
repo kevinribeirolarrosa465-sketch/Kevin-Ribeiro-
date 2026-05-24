@@ -533,7 +533,7 @@ export default function App() {
             <div>
               <span className="text-[#FF0000] text-xs font-black tracking-[0.3em] uppercase mb-4 block">Contacto & Horarios</span>
               <h3 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 leading-tight">
-                Presidente Viera y Suárez <br />
+                Presidente Viera y Joaquín Suárez <br />
                 Tu punto de confianza
               </h3>
               
@@ -597,7 +597,7 @@ export default function App() {
               
               <div className="text-center relative z-10">
                 <MapPin className="w-12 h-12 text-[#FF0000] mx-auto mb-4 animate-bounce" />
-                <h4 className="text-2xl font-black italic uppercase tracking-tighter sm:text-4xl">Presidente Viera & Suárez</h4>
+                <h4 className="text-2xl font-black italic uppercase tracking-tighter sm:text-4xl">Presidente Viera & Joaquín Suárez</h4>
                 <p className="text-stone-500 text-[10px] mt-2 uppercase tracking-[0.5em] font-black">Esquina Tradicional</p>
                 <div className="mt-6 flex flex-col gap-2">
                    <a 
