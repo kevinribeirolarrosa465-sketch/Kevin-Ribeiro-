@@ -25,7 +25,7 @@ const PRODUCTS: Product[] = [
     price: 425,
     unit: "kg",
     description: "Excelente asado de campo, tierno y sabroso.",
-    image: "https://images.unsplash.com/photo-1524225533306-69680373eeca?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/asado_de_campo_1779469781339.png"
   },
   {
     id: "asado-filo",
@@ -41,7 +41,7 @@ const PRODUCTS: Product[] = [
     price: 495,
     unit: "kg",
     description: "Corte magro y tierno, ideal para milanesas o al horno.",
-    image: "https://images.unsplash.com/photo-1603048588665-791ca8aea617?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/nalga_beef_1779468445112.png"
   },
   {
     id: "cuadril",
@@ -49,7 +49,7 @@ const PRODUCTS: Product[] = [
     price: 525,
     unit: "kg",
     description: "Carne de primera, tierna y jugosa para cualquier ocasión.",
-    image: "https://images.unsplash.com/photo-1544022613-e87a0371a542?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/cuadril_beef_cut_1779638856716.png"
   },
   {
     id: "lomo",
@@ -57,7 +57,7 @@ const PRODUCTS: Product[] = [
     price: 630,
     unit: "kg",
     description: "El corte más tierno y exclusivo de la vaca.",
-    image: "https://images.unsplash.com/photo-1627048633391-7661593ea37c?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/lomo_beef_cut_1779639108726.png"
   },
   {
     id: "colita",
@@ -65,7 +65,7 @@ const PRODUCTS: Product[] = [
     price: 544,
     unit: "kg",
     description: "Un clásico para el horno o la parrilla, sin desperdicio.",
-    image: "https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/colita_de_cuadril_1779639358246.png"
   },
   {
     id: "falda-parrillera",
@@ -73,7 +73,7 @@ const PRODUCTS: Product[] = [
     price: 304,
     unit: "kg",
     description: "Sabor intenso, el complemento ideal de tu parrillada.",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/falda_parrillera_1779639965133.png"
   },
   {
     id: "falda",
@@ -81,7 +81,7 @@ const PRODUCTS: Product[] = [
     price: 275,
     unit: "kg",
     description: "Corte tradicional para guisos o caldos con mucho sabor.",
-    image: "https://images.unsplash.com/photo-1551028150-64b9f398f678?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/falda_grilled_ribs_1779640998653.png"
   },
   {
     id: "aguja",
@@ -89,7 +89,7 @@ const PRODUCTS: Product[] = [
     price: 304,
     unit: "kg",
     description: "Carne veteada y jugosa, ideal para la parrilla o estofado.",
-    image: "https://images.unsplash.com/photo-1588168333986-5078d3ae39ef?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/aguja_beef_cut_1779640183288.png"
   },
   {
     id: "chuleta-vaca",
@@ -97,7 +97,7 @@ const PRODUCTS: Product[] = [
     price: 444,
     unit: "kg",
     description: "Costilla ancha con carne tierna, directo al fuego.",
-    image: "https://images.unsplash.com/photo-1627048633391-7661593ea37c?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/chuleta_de_vaca_1779640370452.png"
   },
   {
     id: "matambre",
@@ -105,7 +105,7 @@ const PRODUCTS: Product[] = [
     price: 544,
     unit: "kg",
     description: "Ideal para matambre relleno o a la pizza en la parrilla.",
-    image: "https://images.unsplash.com/photo-1602491673980-73aac3a1027a?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/matambre_beef_cut_1779640454322.png"
   },
   {
     id: "paleta",
@@ -113,7 +113,7 @@ const PRODUCTS: Product[] = [
     price: 334,
     unit: "kg",
     description: "Corte versátil y tierno, ideal para múltiples preparaciones.",
-    image: "https://images.unsplash.com/photo-1551028150-64b9f398f678?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/centro_de_paleta_1779640760091.png"
   },
   {
     id: "mondongo",
@@ -121,7 +121,7 @@ const PRODUCTS: Product[] = [
     price: 305,
     unit: "kg",
     description: "Mondongo de primera calidad, limpio y tierno.",
-    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/mondongo_beef_tripe_1779641623574.png"
   },
   {
     id: "higado",
@@ -129,7 +129,7 @@ const PRODUCTS: Product[] = [
     price: 305,
     unit: "kg",
     description: "Fresco y de calidad, ideal para bifes encebollados.",
-    image: "https://images.unsplash.com/photo-1627048633391-7661593ea37c?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/higado_beef_liver_1779641725281.png"
   },
   {
     id: "lengua",
@@ -137,7 +137,7 @@ const PRODUCTS: Product[] = [
     price: 290,
     unit: "kg",
     description: "Ideal para preparaciones a la vinagreta o estofados.",
-    image: "https://images.unsplash.com/photo-1628268909376-e8c44bb3153f?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/lengua_beef_tongue_1779641874392.png"
   },
   {
     id: "milanesa-carne",
@@ -145,7 +145,7 @@ const PRODUCTS: Product[] = [
     price: 430,
     unit: "kg",
     description: "Preparadas con la mejor carne, listas para freír u hornear.",
-    image: "https://images.unsplash.com/photo-1616423641320-94303494578b?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/milanesa_de_carne_1779641958141.png"
   },
   {
     id: "milanesa-pollo",
@@ -153,7 +153,7 @@ const PRODUCTS: Product[] = [
     price: 304,
     unit: "kg",
     description: "Pechugas seleccionadas y empanadas, sabor y practicidad.",
-    image: "https://images.unsplash.com/photo-1616423641320-94303494578b?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/milanesa_de_pollo_1779642112016.png"
   },
   {
     id: "muslos",
@@ -161,7 +161,7 @@ const PRODUCTS: Product[] = [
     price: 190,
     unit: "kg",
     description: "Muslos de pollo frescos, la parte más jugosa.",
-    image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/muslos_chicken_quarters_1779642338205.png"
   },
   {
     id: "borrego",
@@ -169,7 +169,7 @@ const PRODUCTS: Product[] = [
     price: 315,
     unit: "kg",
     description: "Carne de borrego seleccionada, sabor intenso y tierno.",
-    image: "https://images.unsplash.com/photo-1603073163308-9654c3fb70b5?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/borrego_lamb_chops_1779642438755.png"
   },
   {
     id: "cordero",
@@ -177,7 +177,7 @@ const PRODUCTS: Product[] = [
     price: 345,
     unit: "kg",
     description: "Cordero tierno de primera calidad para tu parrilla.",
-    image: "https://images.unsplash.com/photo-1603073163308-9654c3fb70b5?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/cordero_raw_lamb_1779642560984.png"
   },
   {
     id: "lechon",
@@ -185,7 +185,7 @@ const PRODUCTS: Product[] = [
     price: 360,
     unit: "kg",
     description: "Carne de cerdo tierna y jugosa para ocasiones especiales.",
-    image: "https://images.unsplash.com/photo-1504973960431-1c467e159aa4?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/lechon_raw_pig_1779642627580.png"
   },
   {
     id: "chorizo-comun",
@@ -193,7 +193,7 @@ const PRODUCTS: Product[] = [
     price: 315,
     unit: "kg",
     description: "El infaltable de la parrilla, receta tradicional.",
-    image: "https://images.unsplash.com/photo-1593001874117-c99c800e3eb7?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/chorizo_comun_1779642701318.png"
   },
   {
     id: "chorizo-queso",
@@ -201,7 +201,7 @@ const PRODUCTS: Product[] = [
     price: 335,
     unit: "kg",
     description: "Chorizo artesanal con un corazón de queso fundido.",
-    image: "https://images.unsplash.com/photo-1593001874117-c99c800e3eb7?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/chorizo_queso_1779642822388.png"
   },
   {
     id: "calabreza",
@@ -209,7 +209,7 @@ const PRODUCTS: Product[] = [
     price: 390,
     unit: "kg",
     description: "Embutido seco con el toque justo de picante.",
-    image: "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/calabreza_skewered_sausage_1779642919065.png"
   },
   {
     id: "chincho",
@@ -217,7 +217,7 @@ const PRODUCTS: Product[] = [
     price: 390,
     unit: "kg",
     description: "Chinchulines frescos y limpios para una parrilla perfecta.",
-    image: "https://images.unsplash.com/photo-1593001874117-c99c800e3eb7?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/chincho_chinchulines_1779643199876.png"
   },
   {
     id: "pollo-rostizado",
@@ -225,7 +225,7 @@ const PRODUCTS: Product[] = [
     price: 550,
     unit: "unidad",
     description: "El clásico de la casa, rostizado a la leña.",
-    image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=800&auto=format&fit=crop"
+    image: "/src/assets/images/pollo_rostizado_whole_chicken_1779643118592.png"
   }
 ];
 
@@ -325,7 +325,7 @@ export default function App() {
             <span className="bg-gradient-to-r from-[#B8860B] via-[#FFD700] to-[#B8860B] border-b-2 border-[#FFD700]/30 bg-[length:200%_auto] bg-clip-text text-transparent animate-shine shadow-2xl">ALFONSO</span>
           </motion.h1>
           
-          <div className="hidden md:flex gap-12 items-center text-sm uppercase tracking-[0.4em] font-black text-stone-400">
+          <div className="flex gap-2 sm:gap-4 md:gap-8 items-center">
             {["menu", "ubicacion", "contacto"].map((item) => (
               <motion.a
                 key={item}
@@ -346,7 +346,7 @@ export default function App() {
                   ease: "easeInOut",
                   times: [0, 0.25, 0.5, 0.6, 1]
                 }}
-                className="hover:text-[#FFD700] transition-colors"
+                className="transition-colors text-sm sm:text-base md:text-lg font-black uppercase tracking-[0.25em] hover:text-[#FFD700] cursor-pointer py-2 px-1 flex items-center justify-center"
               >
                 <span className="bg-gradient-to-r from-[#B8860B] via-[#FFD700] to-[#B8860B] bg-[length:200%_auto] bg-clip-text text-transparent animate-shine">
                   {item === "menu" ? "Menú" : item.charAt(0).toUpperCase() + item.slice(1)}
@@ -430,40 +430,28 @@ export default function App() {
       </section>
 
       {/* Featured Grill Section */}
-      <section className="py-24 bg-stone-950 border-b border-stone-900">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <span className="text-[#FF0000] text-sm font-black tracking-[0.5em] uppercase mb-4 block">Especialidad</span>
-              <h3 className="text-5xl md:text-7xl font-display uppercase italic tracking-tighter mb-6">PARRILLA DEL DÍA</h3>
-              <p className="text-stone-400 text-lg mb-8 leading-relaxed italic font-serif">
-                "Cada día encendemos el fuego con leña seleccionada. Nuestras carnes rotan para que siempre pruebes lo mejor de nuestra heladera."
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                {grillItems.map((item, i) => (
-                  <div key={i} className="flex-1 p-6 bg-stone-900 rounded-3xl border border-stone-800 hover:border-[#D4AF37]/50 transition-colors">
-                    <span className="text-[#D4AF37] font-black block mb-2 uppercase text-xl animate-pulse">{item.name}</span>
-                    <p className="text-xs text-stone-500 uppercase tracking-widest">Sugerencia del Maestro</p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-            <div className="relative max-w-sm mx-auto">
-              <img 
-                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&auto=format&fit=crop"
-                className="rounded-[3rem] shadow-2xl border border-stone-800 w-full hover:scale-105 transition-transform duration-700"
-                alt="Parrilla en acción"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-[#FF0000] p-8 rounded-full shadow-[0_0_50px_rgba(255,0,0,0.5)]">
-                 <ChefHat className="w-8 h-8 text-white" />
-              </div>
+      <section className="py-24 bg-stone-950 border-b border-stone-900 animate-fadeIn">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <span className="text-[#FF0000] text-sm font-black tracking-[0.5em] uppercase mb-4 block">Especialidad</span>
+            <h3 className="text-5xl md:text-7xl font-display uppercase italic tracking-tighter mb-6">PARRILLA DEL DÍA</h3>
+            <p className="text-stone-400 text-lg md:text-xl mb-12 leading-relaxed italic font-serif">
+              "Cada día encendemos el fuego con leña seleccionada. Nuestras carnes rotan para que siempre pruebes lo mejor de nuestra heladera."
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {grillItems.map((item, i) => (
+                <div key={i} className="p-8 bg-stone-900 rounded-3xl border border-stone-800 hover:border-[#D4AF37]/50 transition-all duration-300 shadow-xl flex flex-col justify-center items-center">
+                  <span className="text-[#D4AF37] font-black block mb-2 uppercase text-2xl animate-pulse">{item.name}</span>
+                  <p className="text-xs text-stone-500 uppercase tracking-widest font-bold">Sugerencia del Maestro</p>
+                </div>
+              ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -545,7 +533,7 @@ export default function App() {
             <div>
               <span className="text-[#FF0000] text-xs font-black tracking-[0.3em] uppercase mb-4 block">Contacto & Horarios</span>
               <h3 className="text-3xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 leading-tight">
-                Pdt. Viera y Suárez <br />
+                Presidente Viera y Suárez <br />
                 Tu punto de confianza
               </h3>
               
@@ -557,7 +545,7 @@ export default function App() {
                     </div>
                     <div>
                       <h5 className="text-sm font-bold mb-1 uppercase tracking-wider">Ubicación</h5>
-                      <p className="text-stone-500 text-[10px]">Pdt. Viera & Joaquín Suárez</p>
+                      <p className="text-stone-500 text-[10px]">Presidente Viera & Joaquín Suárez</p>
                     </div>
                   </div>
 
@@ -590,7 +578,7 @@ export default function App() {
                     {schedule.map((item) => (
                       <div key={item.day} className="flex justify-between items-center text-[10px] md:text-xs uppercase tracking-tighter hover:bg-stone-800/50 p-1.5 rounded transition-colors">
                         <span className="text-stone-400 font-bold">{item.day}</span>
-                        <span className="text-stone-100 font-mono font-black">{item.hours}</span>
+                        <span className="text-stone-100 font-mono font-black text-xs sm:text-sm md:text-base">{item.hours}</span>
                       </div>
                     ))}
                   </div>
@@ -609,7 +597,7 @@ export default function App() {
               
               <div className="text-center relative z-10">
                 <MapPin className="w-12 h-12 text-[#FF0000] mx-auto mb-4 animate-bounce" />
-                <h4 className="text-2xl font-black italic uppercase tracking-tighter sm:text-4xl">Pdt. Viera & Suárez</h4>
+                <h4 className="text-2xl font-black italic uppercase tracking-tighter sm:text-4xl">Presidente Viera & Suárez</h4>
                 <p className="text-stone-500 text-[10px] mt-2 uppercase tracking-[0.5em] font-black">Esquina Tradicional</p>
                 <div className="mt-6 flex flex-col gap-2">
                    <a 
