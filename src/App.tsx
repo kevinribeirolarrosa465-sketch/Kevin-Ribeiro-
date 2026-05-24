@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { motion } from "motion/react";
+import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import { 
   Phone, 
   MapPin, 
@@ -247,6 +247,18 @@ export default function App() {
   const [scrolled, setScrolled] = useState(false);
   const [selectedWeights, setSelectedWeights] = useState<Record<string, number>>({});
   const [grillItems, setGrillItems] = useState<Product[]>([]);
+  const [isNavScrolling, setIsNavScrolling] = useState(false);
+  const navScrollTimeoutRef = useRef<number | null>(null);
+
+  const handleNavScroll = () => {
+    setIsNavScrolling(true);
+    if (navScrollTimeoutRef.current) {
+      window.clearTimeout(navScrollTimeoutRef.current);
+    }
+    navScrollTimeoutRef.current = window.setTimeout(() => {
+      setIsNavScrolling(false);
+    }, 1000);
+  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -268,6 +280,9 @@ export default function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
       clearInterval(interval);
+      if (navScrollTimeoutRef.current) {
+        window.clearTimeout(navScrollTimeoutRef.current);
+      }
     };
   }, []);
 
@@ -337,34 +352,96 @@ export default function App() {
             <span className="bg-gradient-to-r from-[#B8860B] via-[#FFD700] to-[#B8860B] border-b-2 border-[#FFD700]/30 bg-[length:200%_auto] bg-clip-text text-transparent animate-shine shadow-2xl">ALFONSO</span>
           </motion.h1>
           
-          <div className="flex gap-3 sm:gap-4 md:gap-8 items-center overflow-x-auto whitespace-nowrap scrollbar-none min-w-0 ml-auto pl-4 select-none flex-nowrap">
-            {["menu", "ubicacion", "contacto"].map((item) => (
-              <motion.a
-                key={item}
-                href={`#${item}`}
-                animate={{ 
-                  filter: [
-                    "brightness(1)",
-                    "brightness(1.5) drop-shadow(0 0 5px #D4AF37)",
-                    "brightness(1)",
-                    "brightness(2.5) drop-shadow(0 0 15px #FF4500)",
-                    "brightness(1)"
-                  ]
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  repeatDelay: 6,
-                  ease: "easeInOut",
-                  times: [0, 0.25, 0.5, 0.6, 1]
-                }}
-                className="transition-colors text-sm sm:text-base md:text-lg font-black uppercase tracking-[0.25em] hover:text-[#FFD700] cursor-pointer py-2 px-1 flex items-center justify-center shrink-0"
-              >
-                <span className="bg-gradient-to-r from-[#B8860B] via-[#FFD700] to-[#B8860B] bg-[length:200%_auto] bg-clip-text text-transparent animate-shine">
-                  {item === "menu" ? "Menú" : item.charAt(0).toUpperCase() + item.slice(1)}
-                </span>
-              </motion.a>
-            ))}
+          <div className="flex flex-1 items-center justify-end min-w-0 max-w-[calc(100%-120px)] sm:max-w-none ml-auto select-none border-l border-white/10 pl-3 md:pl-0 md:border-l-0">
+            <AnimatePresence>
+              {isNavScrolling && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.2, x: 8 }}
+                  animate={{ opacity: 1, scale: 1, x: 0 }}
+                  exit={{ opacity: 0, scale: 0.2, x: 8 }}
+                  className="flex items-center gap-1 mr-2 shrink-0 select-none relative"
+                >
+                  <span className="absolute inset-0 bg-red-600/30 rounded-full blur-sm" />
+                  <motion.svg 
+                    className="w-4 h-4 text-[#FF4500] fill-current relative z-10"
+                    viewBox="0 0 24 24"
+                    animate={{ 
+                      y: [1, -1, 1],
+                      scaleY: [1, 1.15, 0.95, 1.1, 1],
+                      filter: ["drop-shadow(0 0 1px #FF8C00)", "drop-shadow(0 0 4px #FF4500)"]
+                    }}
+                    transition={{
+                      duration: 0.5,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  >
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </motion.svg>
+                  <motion.div
+                    className="w-1 h-2 bg-[#FFD700] rounded-full relative z-10"
+                    animate={{
+                      y: [0.5, -2, 0.5],
+                      scale: [0.9, 1.2, 0.9]
+                    }}
+                    transition={{
+                      duration: 0.35,
+                      repeat: Infinity,
+                      ease: "linear"
+                    }}
+                  />
+                  <motion.div
+                    className="absolute -top-1 left-2 w-0.5 h-0.5 bg-yellow-400 rounded-full"
+                    animate={{
+                      y: [0, -8],
+                      opacity: [1, 0]
+                    }}
+                    transition={{
+                      duration: 0.6,
+                      repeat: Infinity,
+                      ease: "easeOut"
+                    }}
+                  />
+                  <span className="text-[9px] font-black text-[#FF8C00] uppercase tracking-wider relative z-10 select-none hidden sm:inline">
+                    FUEGO
+                  </span>
+                </motion.div>
+              )}
+            </AnimatePresence>
+
+            <div 
+              onScroll={handleNavScroll}
+              className="flex gap-3 sm:gap-4 md:gap-8 items-center overflow-x-auto whitespace-nowrap scrollbar-none min-w-0 pr-1 scroll-smooth flex-nowrap pl-1"
+            >
+              {["menu", "ubicacion", "contacto"].map((item) => (
+                <motion.a
+                  key={item}
+                  href={`#${item}`}
+                  animate={{ 
+                    filter: [
+                      "brightness(1)",
+                      "brightness(1.5) drop-shadow(0 0 5px #D4AF37)",
+                      "brightness(1)",
+                      "brightness(2.5) drop-shadow(0 0 15px #FF4500)",
+                      "brightness(1)"
+                    ]
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    repeatDelay: 6,
+                    ease: "easeInOut",
+                    times: [0, 0.25, 0.5, 0.6, 1]
+                  }}
+                  className="transition-colors text-sm sm:text-base md:text-lg font-black uppercase tracking-[0.25em] hover:text-[#FFD700] cursor-pointer py-2 px-1 flex items-center justify-center shrink-0"
+                >
+                  <span className="bg-gradient-to-r from-[#B8860B] via-[#FFD700] to-[#B8860B] bg-[length:200%_auto] bg-clip-text text-transparent animate-shine">
+                    {item === "menu" ? "Menú" : item.charAt(0).toUpperCase() + item.slice(1)}
+                  </span>
+                </motion.a>
+              ))}
+            </div>
           </div>
         </div>
       </nav>
